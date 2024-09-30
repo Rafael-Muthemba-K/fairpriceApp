@@ -5,16 +5,16 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
 
 @Composable
-fun UpdateCerealScreen(navController: NavController,cerealId:String){
+fun ViewOrder(navController: NavController){
     MaterialTheme{
         // Your login UI components here
-        Text(text = "UpdateCerealScreen Screen")
+        Text(text = "Login Screen")
 
         Button(onClick = {
             // Navigate to Register Screen
-            navController.navigate("Update")
+            navController.navigate("login")
         }) {
-            Text("Go to Update")
+            Text("Go to Register")
         }
     }
 }
